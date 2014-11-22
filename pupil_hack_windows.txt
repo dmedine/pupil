@@ -1,0 +1,36 @@
+used the main branch, followed the instructions both here:
+
+https://github.com/richstoner/pupil/blob/windows/win7notes.md
+
+and here:
+
+https://github.com/pupil-labs/pupil/wiki/Dependencies-Installation-Windows
+
+to get and correctly kludge the dependencies (more notes here) -- write it yourself, medine
+
+also, had 32-bit version of python installed, this called innumerable problems, so I had to install python 64-bit
+32bit python works on a 64-bit computer, but will not deal with 64-bit libraries -- it is critical that everything is uniform in this regard
+
+had to change line 35 of  pupil_src\shared_modules\atb\raw.py to
+	dll_path = ctypes.util.find_library('AntTweakBar64')
+if you are all 32 bit, this is not necessary
+
+
+had to change line 62 of pupil_src\shared_modules\glfw\__init__.py to 
+		dll_path = find_library('glfw3')
+
+previously, it was 'glfw' -- which is not the name of the library on windows
+
+then had to remove the EMbarcadero compiler from my path (this lovely suite needs to call the TDM-GCC 'make') -- follow the instructions here:L
+https://github.com/richstoner/pupil/blob/windows/win7notes.md
+very carefully for installing gcc;
+
+then had to install pip (python package manager):
+
+http://stackoverflow.com/questions/4750806/how-to-install-pip-on-windows
+
+in order to get zmq:
+
+pip install pyzmq
+
+then it worked

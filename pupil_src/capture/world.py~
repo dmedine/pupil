@@ -43,11 +43,6 @@ from pupil_server import Pupil_Server
 from pupil_remote import Pupil_Remote
 from marker_detector import Marker_Detector
 
-# added by David Medine at SCCN:
-sys.path.append('../shared_modules/liblsl-Python');
-from lsl_plugin import LSL_Plugin
-
-
 # create logger for the context of this function
 logger = logging.getLogger(__name__)
 
@@ -343,10 +338,6 @@ def world(g_pool,cap_src,cap_size):
 
     #load gaze_display plugin
     g_pool.plugins.append(Display_Recent_Gaze(g_pool))
-
-    # added by David Medine for SCCN
-    # create lsl info, outlet and create the control plugin
-    g_pool.plugins.append(LSL_Plugin(g_pool, (10, 500)))
 
 
     # Event loop
