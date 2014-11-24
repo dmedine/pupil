@@ -1,0 +1,7 @@
+World Process: 2014-11-21 15:42:16,292 - c_methods - DEBUG - Compiling now.
+World Process: 2014-11-21 15:42:16,381 - c_methods - DEBUG - Compiler status: make: Nothing to be done for 'make_all'.
+
+World Process: 2014-11-21 15:42:16,381 - c_methods - DEBUG - Compiling done.
+World Process: 2014-11-21 15:42:17,361 - uvc_capture.other_video - DEBUG - Capture will run with app wide adjustable timebase
+World Process: 2014-11-21 15:42:17,361 - uvc_capture - WARNING - No UVC support: Using camera with id: 0
+World Process: 2014-11-21 15:42:17,596 - world - DEBUG - No calibration found.

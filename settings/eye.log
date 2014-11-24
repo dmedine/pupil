@@ -1,0 +1,3 @@
+EYE Process: 2014-11-21 15:42:17,793 - uvc_capture.other_video - DEBUG - Capture will run with app wide adjustable timebase
+EYE Process: 2014-11-21 15:42:17,793 - uvc_capture - WARNING - No UVC support: Using camera with id: 1
+EYE Process: 2014-11-21 15:42:18,793 - eye - ERROR - Could not retrieve image from capture
